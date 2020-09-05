@@ -14,7 +14,7 @@
 
   <%unless @author.errors[:name].empty? %>
     <div class="field_with_errors">
-  <%else%> 
+  <%else%>
     <div class="field">
   <%end%>
 
@@ -24,7 +24,7 @@
 
   <%unless @author.errors[:email].empty? %>
     <div class="field_with_errors">
-  <%else%> 
+  <%else%>
     <div class="field">
   <%end%>
 
@@ -34,10 +34,10 @@
 
   <%unless @author.errors[:phone_number].empty? %>
     <div class="field_with_errors">
-  <%else%> 
+  <%else%>
     <div class="field">
   <%end%>
-  
+
     <%= label_tag "phone_number", "Phone Number" %>
     <%= text_field_tag "phone_number", @author.phone_number %>
   </div>
